@@ -32,7 +32,7 @@ export const messages = {
   "status.provider.claudeFastModeUnavailable":
     "Claude antwoordde op de standaardsnelheid. Claude Code kon de snelle modus niet gebruiken voor deze beurt.",
   "status.provider.claudeOwnApiKey":
-    "Claude Code is ingesteld om een Anthropic API-sleutel te gebruiken. Anthropic rekent elke aanvraag af op het API-tegoed van de sleutel, niet op je Claude-abonnement. Verwijder de sleutel uit de Claude Code-instellingen of de omgevingsvariabelen om je abonnement te gebruiken, en start OpenBot daarna opnieuw.",
+    "Claude Code is ingesteld om een Anthropic API-sleutel te gebruiken. Anthropic rekent elke aanvraag af op het API-tegoed van de sleutel, niet op je Claude-abonnement. Verwijder de sleutel uit de Claude Code-instellingen of de omgevingsvariabelen om je abonnement te gebruiken, en start RayaBot daarna opnieuw.",
   "status.provider.accountRemovesAfterTurn":
-    "OpenBot verwijdert dit account als de lopende beurten eindigen. De agents gebruiken dan andere accounts.",
+    "RayaBot verwijdert dit account als de lopende beurten eindigen. De agents gebruiken dan andere accounts.",
 } as const satisfies PartialTranslation<typeof source>;

@@ -29,7 +29,7 @@ export const messages = {
   "status.provider.claudeFastModeUnavailable":
     "أجاب Claude بالسرعة العادية. تعذّر على Claude Code استخدام الوضع السريع في هذا الدور.",
   "status.provider.claudeOwnApiKey":
-    "Claude Code مضبوط لاستخدام مفتاح Anthropic API. تحتسب Anthropic كل طلب من رصيد API للمفتاح، وليس من خطة Claude الخاصة بك. لاستخدام خطتك، أزل المفتاح من إعدادات Claude Code أو من متغيرات البيئة، ثم أعد تشغيل OpenBot.",
+    "Claude Code مضبوط لاستخدام مفتاح Anthropic API. تحتسب Anthropic كل طلب من رصيد API للمفتاح، وليس من خطة Claude الخاصة بك. لاستخدام خطتك، أزل المفتاح من إعدادات Claude Code أو من متغيرات البيئة، ثم أعد تشغيل RayaBot.",
   "status.provider.accountRemovesAfterTurn":
-    "يزيل OpenBot هذا الحساب عند انتهاء الأدوار الجارية. ثم يستخدم وكلاؤه حسابات أخرى.",
+    "يزيل RayaBot هذا الحساب عند انتهاء الأدوار الجارية. ثم يستخدم وكلاؤه حسابات أخرى.",
 } as const satisfies PartialTranslation<typeof source>;

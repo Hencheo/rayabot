@@ -140,7 +140,7 @@ async function drawColumn(
     y += lineHeight;
   }
 
-  const label = "Add to OpenBot";
+  const label = "Add to RayaBot";
   context.font = `600 24px ${FONT}`;
   const pillWidth = context.measureText(label).width + 64;
   context.fillStyle = colors.primary;

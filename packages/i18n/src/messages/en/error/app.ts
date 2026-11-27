@@ -4,12 +4,12 @@ export const messages = defineMessages("error.app", {
   "error.app.externalLinkProtocol": "Only HTTP(S) links can open in the external browser.",
   "error.app.notificationsUnsupported": "This system does not support desktop notifications.",
   "error.app.notificationSettingsMissing": "This system has no notification settings page.",
-  "error.app.notReady": "OpenBot is not ready.",
+  "error.app.notReady": "RayaBot is not ready.",
   "error.app.macSecureStorageUnavailable": "macOS secure storage is unavailable.",
   "error.app.secretStorageUnavailable": "System secret storage is unavailable.",
   "error.app.remoteIdentityUnavailable": "The remote host identity is unavailable.",
   "error.app.iceServersMissing": "Remote Signal has not supplied ICE servers yet.",
   "error.app.finishLocalTest": "Finish the local test before switching displays.",
   "error.app.windowBlockedBySecuritySoftware":
-    "Security software on this computer probably stopped the OpenBot window. In your security software, for example Kaspersky, add OpenBot.exe as a trusted application. Then start OpenBot again.",
+    "Security software on this computer probably stopped the RayaBot window. In your security software, for example Kaspersky, add RayaBot.exe as a trusted application. Then start RayaBot again.",
 });

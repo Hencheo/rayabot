@@ -32,7 +32,7 @@ export const messages = {
   "status.provider.claudeFastModeUnavailable":
     "Claude ответил на стандартной скорости. Claude Code не смог использовать быстрый режим в этом ходе.",
   "status.provider.claudeOwnApiKey":
-    "Claude Code настроен на использование ключа API Anthropic. Anthropic списывает каждый запрос с кредита API этого ключа, а не с вашего плана Claude. Чтобы использовать план, удалите ключ из настроек Claude Code или из переменных среды, затем перезапустите OpenBot.",
+    "Claude Code настроен на использование ключа API Anthropic. Anthropic списывает каждый запрос с кредита API этого ключа, а не с вашего плана Claude. Чтобы использовать план, удалите ключ из настроек Claude Code или из переменных среды, затем перезапустите RayaBot.",
   "status.provider.accountRemovesAfterTurn":
-    "OpenBot удалит этот аккаунт, когда закончатся текущие ходы. Затем его агенты будут использовать другие аккаунты.",
+    "RayaBot удалит этот аккаунт, когда закончатся текущие ходы. Затем его агенты будут использовать другие аккаунты.",
 } as const satisfies PartialTranslation<typeof source>;

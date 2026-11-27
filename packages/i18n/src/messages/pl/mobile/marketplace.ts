@@ -65,12 +65,12 @@ export const messages = {
   "mobile.marketplace.facts.accessMac": "Tylko Mac",
   "mobile.marketplace.permission.admin": "Tylko właściciele i administratorzy mogą instalować z Marketplace.",
   "mobile.marketplace.permission.unavailable":
-    "Ten serwer jest offline lub jego OpenBot jest na to za stary. Zaktualizuj OpenBot na komputerze, na którym działa.",
-  "mobile.marketplace.error.agentUnsupported": "Zaktualizuj OpenBot na serwerze, aby dodawać agentów z Marketplace.",
+    "Ten serwer jest offline lub jego RayaBot jest na to za stary. Zaktualizuj RayaBot na komputerze, na którym działa.",
+  "mobile.marketplace.error.agentUnsupported": "Zaktualizuj RayaBot na serwerze, aby dodawać agentów z Marketplace.",
   "mobile.marketplace.error.agentUpdateUnsupported":
-    "Zaktualizuj OpenBot na serwerze, aby aktualizować agentów z Marketplace.",
+    "Zaktualizuj RayaBot na serwerze, aby aktualizować agentów z Marketplace.",
   "mobile.marketplace.error.signInUnsupported":
-    "Zaktualizuj OpenBot na serwerze, aby logować się do aplikacji z telefonu.",
+    "Zaktualizuj RayaBot na serwerze, aby logować się do aplikacji z telefonu.",
   "mobile.marketplace.agent.add": "Dodaj agenta",
   "mobile.marketplace.agent.adding": "Dodawanie agenta",
   "mobile.marketplace.agent.update": "Zaktualizuj",
@@ -107,7 +107,7 @@ export const messages = {
   "mobile.marketplace.app.stepReturn": "Wróć tutaj. {name} połączy się na Twoim serwerze.",
   "mobile.marketplace.app.stepBlank": "Ostatnia strona się nie wczyta. To prawidłowe.",
   "mobile.marketplace.app.stepCopy": "Stuknij pasek adresu i skopiuj cały adres.",
-  "mobile.marketplace.app.stepPaste": "Wróć do OpenBot i wklej adres poniżej.",
+  "mobile.marketplace.app.stepPaste": "Wróć do RayaBot i wklej adres poniżej.",
   "mobile.marketplace.app.openSignIn": "Otwórz logowanie",
   "mobile.marketplace.app.keySecure": "Klucz trafia tylko do Twojego serwera, przez szyfrowane połączenie.",
   "mobile.marketplace.app.connecting": "Łączenie",
@@ -117,11 +117,11 @@ export const messages = {
   "mobile.marketplace.app.connectFailed": "Nie udało się połączyć aplikacji.",
   "mobile.marketplace.app.linkInvalid": "Użyj linku https w domenie {hostname}.",
   "mobile.marketplace.app.docs": "Uzyskaj klucz",
-  "mobile.marketplace.app.local": "Ta aplikacja działa na komputerze z OpenBot. Skonfiguruj ją na tym komputerze.",
+  "mobile.marketplace.app.local": "Ta aplikacja działa na komputerze z RayaBot. Skonfiguruj ją na tym komputerze.",
   "mobile.marketplace.app.needsMac":
-    "Ta aplikacja działa tylko na Macu, na którym działa OpenBot, a ten serwer nie jest Makiem.",
+    "Ta aplikacja działa tylko na Macu, na którym działa RayaBot, a ten serwer nie jest Makiem.",
   "mobile.marketplace.app.relayUnsupported":
-    "Ta aplikacja wymaga logowania w przeglądarce. Zaktualizuj OpenBot na serwerze lub połącz aplikację na komputerze.",
+    "Ta aplikacja wymaga logowania w przeglądarce. Zaktualizuj RayaBot na serwerze lub połącz aplikację na komputerze.",
   "mobile.marketplace.app.waiting": "Oczekiwanie na stronę logowania…",
   "mobile.marketplace.app.openAgain": "Otwórz ponownie stronę logowania",
   "mobile.marketplace.app.pasteLabel": "Adres po zalogowaniu",

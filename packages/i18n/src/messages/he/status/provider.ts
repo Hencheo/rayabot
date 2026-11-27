@@ -27,7 +27,7 @@ export const messages = {
   "status.provider.claudeFastModeUnavailable":
     "Claude ענה במהירות הרגילה. Claude Code לא הצליח להשתמש במצב המהיר בתור הזה.",
   "status.provider.claudeOwnApiKey":
-    "Claude Code מוגדר להשתמש במפתח API של Anthropic. Anthropic מחייבת כל בקשה מקרדיט ה-API של המפתח, ולא מתוכנית Claude שלך. כדי להשתמש בתוכנית שלך, הסר את המפתח מההגדרות של Claude Code או ממשתני הסביבה, ואז הפעל מחדש את OpenBot.",
+    "Claude Code מוגדר להשתמש במפתח API של Anthropic. Anthropic מחייבת כל בקשה מקרדיט ה-API של המפתח, ולא מתוכנית Claude שלך. כדי להשתמש בתוכנית שלך, הסר את המפתח מההגדרות של Claude Code או ממשתני הסביבה, ואז הפעל מחדש את RayaBot.",
   "status.provider.accountRemovesAfterTurn":
-    "OpenBot מסיר את החשבון הזה כשהתורות הפעילים מסתיימים. אז הסוכנים שלו משתמשים בחשבונות אחרים.",
+    "RayaBot מסיר את החשבון הזה כשהתורות הפעילים מסתיימים. אז הסוכנים שלו משתמשים בחשבונות אחרים.",
 } as const satisfies PartialTranslation<typeof source>;

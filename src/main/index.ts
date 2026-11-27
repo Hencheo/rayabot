@@ -329,7 +329,7 @@ const systemTimezone =
     ? applyServerTimezone(join(app.getPath("userData"), SERVER_TIMEZONE_PREFERENCE_FILE), process.env)
     : localTimezone;
 app.enableSandbox();
-const WINDOWS_APP_USER_MODEL_ID = app.isPackaged ? "app.openbot.desktop" : "app.openbot.desktop.dev";
+const WINDOWS_APP_USER_MODEL_ID = app.isPackaged ? "app.rayabot.desktop" : "app.rayabot.desktop.dev";
 if (process.platform === "win32") app.setAppUserModelId(WINDOWS_APP_USER_MODEL_ID);
 if (
   app.isPackaged &&
@@ -1151,7 +1151,7 @@ function requestDesktopNotificationPermission(
       preference,
       showWelcome: () => {
         if (!Notification.isSupported()) return;
-        showRetainedNotification(new Notification({ title: "OpenBot", body: translate("notification.welcome") }));
+        showRetainedNotification(new Notification({ title: "RayaBot", body: translate("notification.welcome") }));
       },
     }),
   );

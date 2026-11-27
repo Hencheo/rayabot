@@ -925,15 +925,21 @@ export class HostService extends EventEmitter<HostEvents> {
       this.#api.refreshIdentity();
       if (input.appearance !== undefined) this.#api.refreshAppearance();
       if (passwordOwner) return this.getStatus();
-      const ownerMembershipId = yield* remoteDecode(() => this.#requiredOwnerMemberId());
-      if (optionalRegisterRemoteHost) yield* this.#registerRemoteHost(optionalRegisterRemoteHost, ownerMembershipId);
-      if (input.logo !== undefined && this.#isActiveHost(identity.serverId)) {
-        yield* optionalUpdateRemoteHostLogo?.(identity.serverId, input.logo ?? null, identity.logoVersion) ??
-          Effect.succeed(undefined);
-      }
-      if (input.appearance !== undefined && this.#isActiveHost(identity.serverId)) {
-        yield* optionalUpdateRemoteHostAppearance?.(identity.serverId, identity.appearance) ?? Effect.void;
-      }
+      yield* Effect.gen({ self: this }, function* () {
+        const ownerMembershipId = yield* remoteDecode(() => this.#requiredOwnerMemberId());
+        if (optionalRegisterRemoteHost) yield* this.#registerRemoteHost(optionalRegisterRemoteHost, ownerMembershipId);
+        if (input.logo !== undefined && this.#isActiveHost(identity.serverId)) {
+          yield* optionalUpdateRemoteHostLogo?.(identity.serverId, input.logo ?? null, identity.logoVersion) ??
+            Effect.succeed(undefined);
+        }
+        if (input.appearance !== undefined && this.#isActiveHost(identity.serverId)) {
+          yield* optionalUpdateRemoteHostAppearance?.(identity.serverId, identity.appearance) ?? Effect.void;
+        }
+      }).pipe(
+        Effect.catch((error) =>
+          Effect.sync(() => logger.warn("The server identity did not sync to Signal.", toLogValue(error))),
+        ),
+      );
       return this.getStatus();
     },
     (operation) => this.#provide(operation),
