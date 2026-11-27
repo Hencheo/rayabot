@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-  <title>OpenBot</title>
+  <title>RayaBot</title>
   <defs>
     <linearGradient id="background" x1="160" y1="96" x2="864" y2="928" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#202426"/>
-      <stop offset="1" stop-color="#090b0c"/>
+      <stop stop-color="#103e48"/>
+      <stop offset="1" stop-color="#060d10"/>
     </linearGradient>
     <linearGradient id="mark" x1="300" y1="260" x2="742" y2="778" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffb04d"/>
-      <stop offset="1" stop-color="#e98427"/>
+      <stop stop-color="#45e3d1"/>
+      <stop offset="1" stop-color="#0d8fb0"/>
     </linearGradient>
     <filter id="shadow" x="190" y="190" width="660" height="680" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="34" stdDeviation="34" flood-color="#000" flood-opacity=".38"/>
